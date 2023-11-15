@@ -23,7 +23,7 @@ void loop()
     A 10-bit ADC converts this analog voltage range to digital values, mapping 0V to 0 and 1.5V to 307.
     Therefore, the ADC output corresponds linearly, with 0V resulting in an ADC output of 0, and 1.5V resulting in an ADC output of 307.
   */
-  sensorValue = sensorValue * 205 / 307 - 55 ; 
+  sensorValue = sensorValue * 205 / 307 - 55 ;  //Convert to deg celcius
   
   if( sensorValue <= 30 )   // if temperature value is less than or equal to 30 deg C
   {
